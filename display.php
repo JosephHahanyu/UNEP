@@ -14,7 +14,7 @@
         $json = json_decode($string, true);
 
 
-        $sql = "SELECT id, firstname, lastname FROM MyGuests";
+        $sql = "SELECT id_iso, year, value FROM iso";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
